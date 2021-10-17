@@ -1,5 +1,14 @@
 function findFirstDuplicate(arr) {
-  // type your code here
+  const uniques = new Set();
+
+  for (const value of arr) {
+    if (uniques.has(value)) {
+      return value;
+    }
+    uniques.add(value);
+  }
+
+  return -1;
 }
 
 if (require.main === module) {
@@ -15,5 +24,5 @@ if (require.main === module) {
 
 module.exports = findFirstDuplicate;
 
-// Please add your pseudocode to this file
-// And a written explanation of your solution
+
+// sets contain only unique values; check value in array and add to set if it doesnt exist in set, otherwise return duplicate. return -1 when no duplicate to return 
