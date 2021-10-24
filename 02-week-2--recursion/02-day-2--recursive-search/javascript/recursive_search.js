@@ -1,6 +1,15 @@
 function recursiveSearch(arr, target) {
-  // type your code here
-}
+    if (arr.length === 0) { //return false when array has been searched through
+      return false;
+    }
+  
+    if (arr[0] === target) { //returns true if target 
+      return true;
+    }
+  
+    return recursiveSearch(arr.slice(1), target); //returns copy of array without the first after iteration 
+  }
+  
 
 if (require.main === module) {
   // add your own tests in here
