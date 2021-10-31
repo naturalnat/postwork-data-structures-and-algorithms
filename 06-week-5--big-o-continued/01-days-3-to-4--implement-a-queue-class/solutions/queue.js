@@ -17,8 +17,7 @@ class Queue {
 
   // remove item from front of queue
   dequeue() {
-    return this.queue.shift();
-  }
+    return this.queue.shift(); //shift removes first element and returns 
 
   // return item at front of queue without removing it
   peek() {
