@@ -1,5 +1,5 @@
 def fibonacci(n)
-  # type your code in here
+
 end
 
 if __FILE__ == $PROGRAM_NAME
